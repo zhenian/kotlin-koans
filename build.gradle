@@ -26,9 +26,9 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.google.guava:guava:16.0'
-    testCompile 'org.junit.jupiter:junit-jupiter:5.4.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'com.google.guava:guava:16.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.4.0'
 }
 
 test {
