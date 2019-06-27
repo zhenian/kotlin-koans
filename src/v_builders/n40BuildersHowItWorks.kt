@@ -14,7 +14,17 @@ fun todoTask40(): Nothing = TODO(
     """
 )
 
-fun insertAnswerHere(): Nothing = todoTask40()
+private var count:Int = 0
+
+fun insertAnswerHere(): Answer {
+    count++
+    return when(count%4){
+        0->Answer.c
+        1->Answer.c
+        2->Answer.b
+        else ->Answer.b
+    }
+}
 
 fun task40() = linkedMapOf<Int, Answer>(
 /*
